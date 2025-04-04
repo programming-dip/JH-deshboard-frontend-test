@@ -4,6 +4,11 @@ Version: 1.0
 Author: Myrathemes
 File: Icons Css File
 */
+
+/* 
+ Search icon names here:
+ https://fonts.google.com/icons?icon.size=24&icon.color=%23e3e3e3
+*/
 @import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css");
 /* fallback */
 @font-face {
