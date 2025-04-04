@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- Slidebar starts here -->
+        <!-- Sidebar starts here -->
          <aside id="app-menu"
          class="hs-overlay fixed inset-y-0 start-0 z-60 hidden w-sidenav min-w-sidenav bg-slate-800 overflow-y-auto -translate-x-full transform transition-all duration-200 hs-overlay-open:translate-x-0 lg:bottom-0 lg:end-auto lg:z-30 lg:block lg:translate-x-0 rtl:translate-x-full rtl:hs-overlay-open:translate-x-0 rtl:lg:translate-x-0 print:hidden [--body-scroll:true] [--overlay-backdrop:true] lg:[--overlay-backdrop:false]">
 
@@ -53,10 +53,151 @@
                             </ul>
                         </div>
                     </li>
+
+
+                    <li class="px-3 py-2 text-xs uppercase font-medium text-default-500">Apps</li>
+                    <li class="menu-item">
+                        <a class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-400 transition-all hover:bg-default-100/5"
+                            href="customers.html">
+                            <i class="i-lucide-user-circle size-5"></i>
+                            Customers
+                        </a>
+                    </li>
+                    
+                    <li class="menu-item hs-accordion">
+                        <a href="javascript:void(0)"
+                            class="hs-accordion-toggle group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-400 transition-all hover:bg-default-100/5 hs-accordion-active:bg-default-100/5 hs-accordion-active:text-default-100">
+                            <i class="i-lucide-check-square size-5"></i>
+                            <span class="menu-text"> Forms </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+
+                        <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+                            <ul class="mt-1 space-y-1">
+                                <li class="menu-item">
+                                    <a href="form-1.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-1.5 text-sm font-medium text-default-400 transition-all hover:bg-default-100/5">
+                                        <i class="menu-dot"></i>
+                                        <span class="menu-text">Form-1</span>
+                                    </a>
+                                </li>
+                                <!-- More Form links goes here -->
+
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="tables.html"
+                            class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-400 transition-all hover:bg-default-100/5 hs-accordion-active:bg-default-100/5 hs-accordion-active:text-default-100">
+                            <i class="i-lucide-table size-5"></i>
+                            <span class="menu-text"> Tables </span>
+                        </a>
+                    </li>
+
+
+                    <li class="menu-item">
+                        <a href="charts-apex.html"
+                            class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-400 transition-all hover:bg-default-100/5 hs-accordion-active:bg-default-100/5 hs-accordion-active:text-default-100">
+                            <i class="i-tabler-chart-donut-2 size-5"></i>
+                            <span class="menu-text"> Charts </span>
+                        </a>
+                    </li>
                 </ul>     
              </div>
          </div>
          </aside>
+         <!-- Sidebar ends here-->
+
+         <!-- Page Content Starts Here -->
+          <div class="page-content">
+              <!-- Topbar starts here -->
+              <header class="app-header sticky top-0 z-50 min-h-topbar flex items-center bg-white">
+                <div class="px-6 w-full flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-5">
+                        <!-- Sidenav Menu Toggle Button -->
+                        <button
+                            class="flex items-center text-default-500 rounded-full cursor-pointer p-2 bg-white border border-default-200 hover:bg-primary/15 hover:text-primary hover:border-primary/5 transition-all"
+                            data-hs-overlay="#app-menu" aria-label="Toggle navigation">
+                            <i class="i-lucide-align-left text-2xl"></i>
+                        </button>
+
+                        <!-- Topbar Brand Logo -->
+                        <a href="index.html" class="md:hidden flex">
+                            <img src="assets/images/favicon.png" class="h-12" alt="Small logo">
+                        </a>
+
+                        <!-- Topbar Search -->
+                        <div class="md:flex hidden items-center relative">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                <i class="i-tabler-search text-base"></i>
+                            </div>
+                            <input type="search"
+                                class="form-input px-10 rounded-lg  bg-default-500/10 border-transparent focus:border-transparent w-80"
+                                placeholder="Search...">
+                            <button type="button" class="absolute inset-y-0 end-0 flex items-center pe-3">
+                                <i class="i-tabler-microphone text-base hover:text-black"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-5">
+                        <!-- Fullscreen Toggle Button -->
+                        <div class="md:flex hidden">
+                            <button data-toggle="fullscreen" type="button"
+                                class="p-2 rounded-full bg-white border border-default-200 hover:bg-primary/15 hover:text-primary transition-all">
+                                <span class="sr-only">Fullscreen Mode</span>
+                                <span class="flex items-center justify-center size-6">
+                                    <i class="i-lucide-maximize text-2xl flex group-[-fullscreen]:hidden"></i>
+                                    <i class="i-lucide-minimize text-2xl hidden group-[-fullscreen]:flex"></i>
+                                </span>
+                            </button>
+                        </div>
+                        
+                        <!-- Profile Dropdown Button -->
+                        <div class="relative">
+                            <div class="hs-dropdown relative inline-flex [--placement:bottom-right]">
+                                <button type="button" class="hs-dropdown-toggle">
+                                    <img src="assets/images/users/avatar-8.jpg" alt="user-image" class="rounded-full h-10">
+                                </button>
+                                <div
+                                    class="hs-dropdown-menu duration mt-2 min-w-48 rounded-lg border border-default-200 bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100 hidden">
+                                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-default-100"
+                                        href="#">
+                                        Profile
+                                    </a>
+                                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-default-100"
+                                        href="#">
+                                        Feed
+                                    </a>
+                                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-default-100"
+                                        href="#">
+                                        Analytics
+                                    </a>
+                                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-default-100"
+                                        href="#">
+                                        Settings
+                                    </a>
+                                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-default-100"
+                                        href="#">
+                                        Support
+                                    </a>
+
+                                    <hr class="my-2 -mx-2">
+
+                                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-default-100"
+                                        href="#">
+                                        Log Out
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+              </header> 
+          </div>
     </div>
 </body>
 </html>
