@@ -129,9 +129,9 @@ var totalRevenueOptions = {
             show: false
         }
     },
-    xaxis: {
-        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"]
-    }
+    // xaxis: {
+    //     categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"]
+    // }
 };
 
 // Initialize Total Revenue Chart to the page
